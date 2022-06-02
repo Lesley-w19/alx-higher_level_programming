@@ -6,4 +6,4 @@ if __name__ == "__main__":
     for n in sys.argv:
         if n != sys.argv[0]:
             rslt += int(n)
-        print(rslt)
+        print("{:d}".format(rslt))
