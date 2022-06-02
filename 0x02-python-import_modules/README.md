@@ -6,3 +6,4 @@
 4. Who are you?
 5. Everything can be imported
 6. Build my own calculator!
+7. Easy print
