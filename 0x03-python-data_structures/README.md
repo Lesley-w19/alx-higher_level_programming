@@ -1,4 +1,4 @@
-0x03-python-data_structures
+#0x03-python-data_structures
 0. Print a list of integers
 1. Secure access to an element in a list
 2. Replace element
@@ -8,3 +8,4 @@
 6. Lists of lists = Matrix
 7. Tuples addition
 8. More returns!
+9. Find the max
