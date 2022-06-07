@@ -6,3 +6,4 @@
 4. Replace in a copy
 5. Can you C me now?
 6. Lists of lists = Matrix
+7. Tuples addition
