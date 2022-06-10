@@ -9,5 +9,4 @@ for num in range(1, 101):
     else:
         print(num, end='')
     print(" ", end='')
-
 print()
