@@ -8,3 +8,4 @@
 6. Inventing is a combination of brains and materials. The more brains you use, the less material you need
 7. islower
 8. To uppercase
+9. There are only 3 colors, 10 digits, and 7 notes; it's what we do with them that's important
