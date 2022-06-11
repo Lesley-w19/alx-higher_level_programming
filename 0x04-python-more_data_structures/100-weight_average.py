@@ -8,6 +8,6 @@ def weight_average(my_list=[]):
 
     for i in my_list:
         n += i[0] * i[1]
-        d += i[1]
+        t += i[1]
 
-    return num / d
+    return n / t
