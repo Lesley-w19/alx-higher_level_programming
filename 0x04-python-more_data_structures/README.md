@@ -9,3 +9,4 @@
 7. Update dictionary
 8. Simple delete by key
 9. Multiply by 2
+10. Best score
