@@ -3,28 +3,16 @@
 
 class Rectangle:
     """class Rectangle defines a rectangle with bases"""
-    widthVal = None
-    heightVal = None
+    _Rectangle__height = None
+    _Rectangle__width = None
 
     def __init__(self, width=0, height=0):
-        self.widthVal = width
-        self.heightVal = height
-
-    @property
-    def width(self):
-        return self.widthVal
-
-    @width.setter
-    def width(self, value):
-        if not isinstance(value, int):
-            raise TypeError("width must be an integer")
-        if value < 0:
-            raise ValueError("width must be >= 0")
-        self.widthVal = value
+        self._Rectangle__height = height
+        self._Rectangle__width = width
 
     @property
     def height(self):
-        return self.heightVal
+        return self._Rectangle__height
 
     @height.setter
     def height(self, value):
@@ -32,4 +20,16 @@ class Rectangle:
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >=0")
-        self.heightVal = value
+        self._Rectangle__height = value
+
+    @property
+    def width(self):
+        return self._Rectangle__width
+
+    @width.setter
+    def width(self, value):
+        if not isinstance(value, int):
+            raise TypeError("width must be an integer")
+        if value < 0:
+            raise ValueError("width must be >= 0")
+        self._Rectangle__width = value
