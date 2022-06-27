@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Rectangle"""
+"""Retangle"""
 
 class Rectangle:
     """ class Rectangle """
@@ -49,13 +49,9 @@ class Rectangle:
             result += ''
         else:
             for row in range(self.height):
-                result += "#" * (self.width)
+                result += "#" * self.width
                 if (row < self.height - 1):
                     result += '\n'
         return result
-
     def __repr__(self):
-        return ("Rectangle ({:d}, {:d})".format(self.width, self.height))
-
-    def __del__(self):
-        print("Bye rectangle...")
+        return ("Rectangle({:d}, {:d})".format(self.width, self.height))
