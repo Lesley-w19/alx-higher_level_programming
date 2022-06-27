@@ -5,10 +5,12 @@ class Rectangle:
     """ class Rectangle """
     _Rectangle__width = None
     _Rectangle__height = None
+    number_of_instances = 0
 
     def __init__(self, widthValue=0, heightValue=0):
         self.width = widthValue
         self.height = heightValue
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -53,5 +55,10 @@ class Rectangle:
                 if (row < self.height - 1):
                     result += '\n'
         return result
+
     def __repr__(self):
         return ("Rectangle({:d}, {:d})".format(self.width, self.height))
+
+    def __del__(self):
+        print("Bye rectangle...")
+        Rectangle.number_of_instances -= 1
