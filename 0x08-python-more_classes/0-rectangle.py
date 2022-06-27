@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """Write an empty Rectangle class"""
 
 class Rectangle:
