@@ -3,14 +3,13 @@
 def safe_print_list(my_list=[], x=0):
     num_of_list = 0
 
-    for value in my_list[:x]:
+    for value in range(x):
         try:
-            print("{:d}".format(value), end='')
+            print("{}".format(my_list[value]), end='')
+        except:
+            break
+        else: 
             num_of_list += 1
-        
-        except ValueError:
-            pass
 
-        print(value)
-
+        print()
         return num_of_list
