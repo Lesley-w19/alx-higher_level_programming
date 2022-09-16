@@ -7,3 +7,4 @@
 5. Full description
 6. List all in table
 7. First add
+8. Count 89
