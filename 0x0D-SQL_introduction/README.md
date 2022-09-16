@@ -1,5 +1,5 @@
-0x0D-SQL_introduction
-0. List databases
+0x0D-SQL_introduction 0. List databases
+
 1. Create a database
 2. Delete a database
 3. List tables
@@ -11,3 +11,5 @@
 9. Full creation
 10. List by best
 11. Select the best
+12. Cheating is bad
+
