@@ -17,3 +17,4 @@
 13. Number of shows by genre
 14. My genres
 15. Only Comedy
+16. List shows and genres
