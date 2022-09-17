@@ -4,4 +4,5 @@
 -- Results must be sorted in ascending order by cities.id
 -- You can use only one SELECT statement
 
- SELECT cty.id, cty.name, st.name from hbtn_0d_usa.cities cty INNER JOIN hbtn_0d_usa.states st ON cty.state_id = st.id ORDER BY cty.id ASC;
+ SELECT cty.id, cty.name, st.name from cities cty INNER JOIN states st ON cty.state_id = st.id ORDER BY cty.id ASC;
+
