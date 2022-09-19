@@ -5,16 +5,16 @@
  */
 
 let max = 0;
-let second_max = 0;
+let secondMax = 0;
 
 for (let i = 2; i < process.argv.length; i++) {
-  let number = parseInt(process.argv[i]);
+  const number = parseInt(process.argv[i]);
 
   if (max < number) {
-    second_max = max;
+    secondMax = max;
     max = number;
-  } else if (second_max < number) {
-    second_max = number;
+  } else if (secondMax < number) {
+    secondMax = number;
   }
 }
-console.log(second_max);
+console.log(secondMax);
