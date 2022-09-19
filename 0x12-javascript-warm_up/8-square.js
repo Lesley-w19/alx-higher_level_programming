@@ -5,7 +5,7 @@
  */
 
 if (isNaN(parseInt(process.argv[2]))) {
-  console.log('Missing argument');
+  console.log('Missing size');
 } else {
   const x = process.argv[2];
   for (let rw = 0; rw < x; rw++) {
