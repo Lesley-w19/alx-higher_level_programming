@@ -12,3 +12,4 @@
 7. I love C
 8. Square
 9. Add
+10. Factorial
