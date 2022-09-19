@@ -4,7 +4,7 @@
  * a script that computes and prints a factorial
  */
 
-function factorial(num) {
+function factorial (num) {
   if (isNaN(num) || num === 0) {
     return 1;
   }
