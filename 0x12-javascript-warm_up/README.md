@@ -8,3 +8,4 @@
 3. Value of my argument
 4. Create a sentence
 5. An Integer
+6. Loop to languages
