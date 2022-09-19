@@ -1,4 +1,5 @@
-## 0x12-javascript-warm_up
+# 0x12-javascript-warm_up
 
-#### TASKES
+
+### TASKS
 0. First constant, first print
