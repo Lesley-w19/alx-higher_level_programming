@@ -9,7 +9,7 @@
  *Print the new dictionary at the end
  */
 
-const dictionary = require("./101-data").dict;
+const dictionary = require('./101-data').dict;
 console.log(dictionary);
 
 const newDict = {};
