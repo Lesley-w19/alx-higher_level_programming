@@ -11,3 +11,4 @@
 7. Occurrences
 8. Esrever
 9. Log me
+10. Number conversion
