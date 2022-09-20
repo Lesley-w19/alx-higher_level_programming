@@ -7,10 +7,10 @@
  * If c is undefined, use the character X
  */
 
-const BSquare = require("./5-square");
+const BSquare = require('./5-square');
 
 class Square extends BSquare {
-  charPrint(c) {
+  charPrint (c) {
     if (c === undefined) {
       this.print();
     } else {
@@ -18,7 +18,7 @@ class Square extends BSquare {
         for (let cl = 0; cl < this.width; cl++) {
           process.stdout.write(c);
         }
-        process.stdout.write("\n");
+        process.stdout.write('\n');
       }
     }
   }
