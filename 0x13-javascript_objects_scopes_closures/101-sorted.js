@@ -9,7 +9,7 @@
  *Print the new dictionary at the end
  */
 
-const dictionary = require('./101-data').dict;
+const dictionary = require("./101-data").dict;
 console.log(dictionary);
 
 const newDict = {};
@@ -23,4 +23,4 @@ for (const i in keys) {
   }
   newDict[values[i]].push(keys[i]);
 }
-console.log(newDict);
+console.log(JSON.stringify(newDict));
