@@ -14,8 +14,8 @@ class Rectangle {
   }
 
   print () {
-    for (let rw = 0; rw < this.height; rw++) {
-      for (let cl = 0; cl < this.width; cl++) {
+    for (let row = 0; row < this.height; row++) {
+      for (let col = 0; col < this.width; col++) {
         process.stdout.write('X');
       }
       process.stdout.write('\n');
@@ -23,10 +23,10 @@ class Rectangle {
   }
 }
 
-const r1 = new Rectangle(2, 3);
-r1.print();
+// const r1 = new Rectangle(2, 3);
+// r1.print();
 
-const r2 = new Rectangle(10, 5);
-r2.print();
+// const r2 = new Rectangle(10, 5);
+// r2.print();
 
 module.exports = Rectangle;
