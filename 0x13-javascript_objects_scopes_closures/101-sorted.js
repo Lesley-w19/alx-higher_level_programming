@@ -23,4 +23,4 @@ for (const i in keys) {
   }
   newDict[values[i]].push(keys[i]);
 }
-console.log(JSON.stringify(newDict));
+console.log(newDict);
