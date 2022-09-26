@@ -24,16 +24,14 @@ uses setters and getters to set and retrieve size int
         ValueError: if value is not >= 0
         """
         self.__size = value
-        
+
     def area(self):
         """  that returns the current square area """
         return self.__size ** 2
-    
+
     def my_print(self):
         """ that prints in stdout the square with the character # """
         for i in range(self.__size):
             print("#" * self.__size)
         if (self.__size == 0):
             print()
-        
-    
