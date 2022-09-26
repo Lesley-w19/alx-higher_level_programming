@@ -2,9 +2,6 @@
 """ a class Square that defines a square by: (based on 5-square.py) """
 
 
-from re import T
-
-
 class Square:
     """ defines a square with size and position """
     def __init__(self, size=0, position=(0, 0)):
