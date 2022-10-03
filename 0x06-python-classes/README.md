@@ -10,3 +10,4 @@
 6. Coordinates of a square
 7. Singly linked list
 8. Print Square instance
+9. Compare 2 squares
