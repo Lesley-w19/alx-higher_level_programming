@@ -11,3 +11,4 @@
 7. Singly linked list
 8. Print Square instance
 9. Compare 2 squares
+10. ByteCode -> Python #5
