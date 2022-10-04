@@ -3,11 +3,11 @@
 
 
 def safe_print_division(a, b):
-    results = 0
+    result = 0
     try:
-        results = a / b
+        result = a / b
     except ZeroDivisionError:
-        results = None
+        result = None
     finally:
-        print("Inside result: {:d}".format(results))
-        return results
+        print("Inside result: {}".format(result))
+        return result
