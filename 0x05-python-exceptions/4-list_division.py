@@ -3,7 +3,6 @@
 
 
 def list_division(my_list_1, my_list_2, list_length):
-    """ function that divides element by element 2 lists. """
     newList = list()
 
     for l in range(list_length):
