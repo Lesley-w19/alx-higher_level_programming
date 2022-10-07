@@ -14,3 +14,5 @@
 8. Is really equal
 9. Is really the same
 10. And with a list, is it equal
+11. And with a list, is it the same
+12. And with a list, is it really equal
