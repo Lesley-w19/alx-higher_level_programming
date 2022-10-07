@@ -1,5 +1,7 @@
 # 0x09-python-everything_is_object
 
+ ##### Both “is” and “==” are used for object comparison in Python. The operator “==” compares values of two objects, while “is” checks if two objects are same (In other words two references to same object).
+
 ### TASKS
 0. Who am I?
 1. Where are you?
