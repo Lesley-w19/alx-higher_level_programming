@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" a class with no class or object attribute """
 
 
 class LockedClass:
