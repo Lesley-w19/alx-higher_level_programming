@@ -2,6 +2,11 @@
 
  ##### Both “is” and “==” are used for object comparison in Python. The operator “==” compares values of two objects, while “is” checks if two objects are same (In other words two references to same object).
 
+ ##### Tuples are used to store multiple items in a single variable.
+ --- Tuple is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Set, and Dictionary, all with different qualities and usage.
+ --- A tuple is a collection which is ordered and unchangeable.
+ --- Tuples are written with round brackets.
+
 ### TASKS
 0. Who am I?
 1. Where are you?
