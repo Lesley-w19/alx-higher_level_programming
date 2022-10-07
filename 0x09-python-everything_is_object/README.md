@@ -34,5 +34,6 @@
 23. Tuple or not?
 24. Who I am?
 25. Tuple or not
+26. Empty is not empty
 
 
