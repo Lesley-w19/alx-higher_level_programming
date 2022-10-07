@@ -18,3 +18,4 @@
 12. And with a list, is it really equal
 13. And with a list, is it really the same
 14. List append
+15. List add
