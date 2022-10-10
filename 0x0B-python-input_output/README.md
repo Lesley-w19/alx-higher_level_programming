@@ -11,3 +11,4 @@
 7. Load, add, save
 8. Class to JSON
 10. Student to JSON with filter
+11. Student to disk and reload
