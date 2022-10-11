@@ -6,25 +6,40 @@ Using BaseGeometry
 ------------------
 
 first import
-__________________________________________________________________________________
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
-__________________________________________________________________________________
+
 Module documentation test
 >>> len(__import__("7-base_geometry").__doc__) > 0
 True
 
-__________________________________________________________________________________
-Function documentation test
+
+Class documentation test
 >>> len(__import__("7-base_geometry").BaseGeometry.__doc__) > 0
 True
 
-__________________________________________________________________________________
+Area function documentation test
+>>> len(__import__("7-base_geometry").area.__doc__) > 0
+True
+
+Function documentation test
+>>> len(__import__("7-base_geometry").integer_validator.__doc__) > 0
+True
+
+Variable instance test
 >>> bg = BaseGeometry()
 
-__________________________________________________________________________________
 Type return test
 >>> type(bg)
 <class '7-base_geometry.BaseGeometry'>
 
-__________________________________________________________________________________
+
+>>> bg.integer_validator("my_int", 12)
+>>> 
+
+>>> bg.integer_validator("width", 89)
+>>> 
+
+>>> bg.integer_validator("num", -1)
+....
+ValueError: num must be greater than 0
