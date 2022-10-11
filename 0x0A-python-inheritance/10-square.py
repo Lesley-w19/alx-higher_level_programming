@@ -20,10 +20,9 @@ class Sqaure(Rectangle):
         """
 
         self.integer_validator("size", size)
-
+        super.__init__(size, size)
         self.__size = size
 
     def area(self):
         """ area method must be implemented"""
-        result = self.__size ** 2
-        return result
+        return super().area()
