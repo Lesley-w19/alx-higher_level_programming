@@ -25,4 +25,4 @@ class Sqaure(Rectangle):
 
     def area(self):
         """ area method must be implemented"""
-        return super().area()
+        return super().area(self.__size)
