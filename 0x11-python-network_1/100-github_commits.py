@@ -23,6 +23,5 @@ if __name__ == '__main__':
         else:
             for infos in content:
                 print(
-                    "{}: {}".format(
-                        infos.get('sha'),
-                        infos.get('commit').get('author').get('name')))
+                    "{}: {}".format(infos.get('sha'),
+infos.get('commit').get('author').get('name')))
