@@ -4,19 +4,17 @@
 """
 
 
-import re
 from sys import argv
 import requests
 
 
 if __name__ == '__main__':
     base_url = argv[1]
-
-    with requests.get(base_url) as response:
-        error_code = response.status_code
-        
-        if error_code >= 400:
-            print("Error code: {}".format(error_code))
-        else:
-            content = response.text
+    
+    
+    try:
+        with requests.get(base_url) as response:
+            content = response.content.decode("UTF-8")
             print(content)
+    except requests.exceptions.HTTPError as e:
+        print("Error code: {}".format(e.response.status_code))
