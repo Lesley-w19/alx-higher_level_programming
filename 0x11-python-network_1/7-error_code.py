@@ -10,8 +10,7 @@ import requests
 
 if __name__ == '__main__':
     base_url = argv[1]
-    
-    
+
     try:
         with requests.get(base_url) as response:
             content = response.content.decode("UTF-8")
