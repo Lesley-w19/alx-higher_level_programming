@@ -12,5 +12,5 @@ if __name__ == '__main__':
     base_url = argv[1]
 
     with requests.get(base_url) as response:
-        content = response.headers['X-Request-Id']
-        print(content)
+        content_id = response.headers.get('X-Request-Id')
+        print(content_id)
