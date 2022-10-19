@@ -4,7 +4,6 @@
 """
 
 
-import re
 from sys import argv
 import requests
 
