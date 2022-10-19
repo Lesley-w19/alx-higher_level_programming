@@ -16,7 +16,7 @@ if __name__ == '__main__':
 
     data = parse.urlencode(value).encode("ascii")
 
-    with request.urlopen(base_url,data) as response:
+    with request.urlopen(base_url, data) as response:
         content = response.read()
 
-        print("Your email is: {}".format(content))
+        print("Email: {}".format(content))
