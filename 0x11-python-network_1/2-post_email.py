@@ -19,4 +19,4 @@ if __name__ == '__main__':
     with request.urlopen(base_url, data) as response:
         content = response.read().decode('UTF-8')
 
-        print("Email: {}".format(content))
+        print(content)
