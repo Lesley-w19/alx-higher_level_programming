@@ -21,7 +21,7 @@ if __name__ == '__main__':
         if (len(content) == 0):
             print("No result")
         else:
-            for infos in content[0:10]:
+            for infos in content:
                 print(
                     "{}: {}".format(
                         infos.get('sha'),
