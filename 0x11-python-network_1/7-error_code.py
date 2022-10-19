@@ -14,9 +14,8 @@ if __name__ == '__main__':
 
     try:
         with requests.get(base_url) as response:
-            response.raise_for_status()
             content = response.content.decode("UTF-8")
             print(content)
     except requests.exceptions.HTTPError as e:
-        print(e.response)
-        print("Error code: {}".format(e.response.status_code))
+        error = e.response.status_code
+        print("Error code: {}".format(error))
