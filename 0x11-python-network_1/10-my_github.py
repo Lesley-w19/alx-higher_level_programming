@@ -11,10 +11,10 @@ from requests.auth import HTTPBasicAuth
 if '__name__' == '__main__':
     base_url = 'https://api.github.com/user'
 
-    username = argv[1]
-    password = argv[2]
+    user = argv[1]
+    p_wrd = argv[2]
 
-    with requests.get(base_url, auth=HTTPBasicAuth(username, password)) as response:
+    with requests.get(base_url, auth=HTTPBasicAuth(user, p_wrd)) as response:
         content = response.json()
         user_id = content.get('id')
         print(user_id)
