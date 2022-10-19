@@ -2,6 +2,8 @@
 """
  6-peak.py
 """
+
+
 def find_peak(list_of_integers):
     """
     a function that finds a peak in a list of unsorted integers.
