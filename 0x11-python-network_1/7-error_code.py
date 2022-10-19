@@ -11,11 +11,9 @@ import requests
 
 if __name__ == '__main__':
     base_url = argv[1]
+    with requests.get(base_url) as response:
+        if response.status_code >= 400:
+            print("Error code: {}".format(response.status_code))
+        else:
+            print(response.text)
 
-    try:
-        with requests.get(base_url) as response:
-            content = response.content.decode("UTF-8")
-            print(content)
-    except requests.exceptions.HTTPError as e:
-        error = e.response.status_code
-        print("Error code: {}".format(error))
