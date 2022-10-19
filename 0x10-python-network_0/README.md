@@ -5,3 +5,4 @@
 0. cURL body size
 1. cURL to the end
 3. cURL only methods
+4. cURL headers
