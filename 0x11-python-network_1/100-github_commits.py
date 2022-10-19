@@ -13,9 +13,8 @@ if __name__ == '__main__':
     repo_owner = argv[2]
     
     base_url = "https://api.github.com/repos/{}/{}/commits".format(
-            repo_name, repo_owner
-        )
-    
+            repo_name, repo_owner)
+
     with requests.get(base_url) as response:
         content = response.json()
         
@@ -26,6 +25,4 @@ if __name__ == '__main__':
                 print(
                     "{}: {}".format(
                         infos.get('sha'),
-                        infos.get('commit').get('author').get('name')
-                    )
-                )
+                        infos.get('commit').get('author').get('name')))
