@@ -16,5 +16,4 @@ if '__name__' == '__main__':
 
     with requests.get(base_url, auth=HTTPBasicAuth(user, p_wrd)) as response:
         content = response.json()
-        user_id = content
-        print(user_id)
+        print("{}".format(content.get('id')))
