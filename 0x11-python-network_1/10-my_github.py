@@ -6,7 +6,7 @@
 
 from sys import argv
 import requests
-
+from requests.auth import HTTPBasicAuth
 
 if '__name__' == '__main__':
     base_url = 'https://api.github.com/user'
@@ -14,6 +14,7 @@ if '__name__' == '__main__':
     username = argv[1]
     password = argv[2]
 
-    with requests.get(base_url, auth=(username, password)) as response:
+    with requests.get(base_url, auth=HTTPBasicAuth(username, password)) as response:
         content = response.json()
-        print(content['id'])
+        user_id = content.get('id')
+        print(user_id)
