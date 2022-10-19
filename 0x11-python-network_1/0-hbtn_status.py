@@ -15,6 +15,4 @@ if __name__ == '__main__':
         \n\t- type: {}\
         \n\t- content: {}\
         \n\t- utf8 content: {}\
-        ".format(typeContent, content, ut8Content)
-        )
-   
+        ".format(typeContent, content, ut8Content))
