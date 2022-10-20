@@ -14,11 +14,11 @@ def main():
     db_name = argv[3]
 
     db_connect = MySQLdb.connect(
-        host = 'localhost',
-        port = 3306,
-        user = username,
-        password = passwrd,
-        db = db_name
+        host='localhost',
+        port=3306,
+        user=username,
+        password=passwrd,
+        db=db_name
     )
 
     cur = db_connect.cursor()
