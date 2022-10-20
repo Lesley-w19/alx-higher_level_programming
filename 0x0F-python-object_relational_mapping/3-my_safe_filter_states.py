@@ -31,7 +31,8 @@ def main():
 
     cur = db_connect.cursor()
 
-    cur.execute("SELECT * FROM states WHERE name=%s ORDER BY id ASC", {st_nput})
+    cur.execute("SELECT * FROM states WHERE name=%s\
+    ORDER BY id ASC", {st_nput})
     query_rows = cur.fetchall()
 
     for row in query_rows:
