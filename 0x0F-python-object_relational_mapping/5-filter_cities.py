@@ -28,8 +28,7 @@ def main():
 
     cur = db_connect.cursor()
 
-    cur.execute(
-    "SELECT group_concat(cty.name separator ', ')\
+    cur.execute("SELECT group_concat(cty.name separator ', ')\
     FROM cities cty\
     INNER JOIN states st ON cty.state_id = st.id\
     WHERE st.name = %s", (search_input,))
