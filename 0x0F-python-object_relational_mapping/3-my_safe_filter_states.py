@@ -3,12 +3,14 @@
 3-my_safe_filter_states
 Yes, it’s an SQL injection to delete all records of a table…
 
-Once again, write a script that takes in arguments and displays all values in the states table of hbtn_0e_0_usa where name matches the argument. But this time, write one that is safe from MySQL injections!
+Once again, write a script that takes in arguments and displays
+all values in the states table of hbtn_0e_0_usa where name
+matches the argument. But this time, write one that is safe
+from MySQL injections!
 """
 
 
 from sys import argv
-from this import s
 import MySQLdb
 
 
@@ -28,8 +30,8 @@ def main():
     )
 
     cur = db_connect.cursor()
-    
-    cur.execute("SELECT * FROM states WHERE name=%s ORDER BY id ASC",{st_nput})
+
+    cur.execute("SELECT * FROM states WHERE name=%s ORDER BY id ASC", {st_nput})
     query_rows = cur.fetchall()
 
     for row in query_rows:
