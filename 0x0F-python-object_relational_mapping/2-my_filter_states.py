@@ -24,7 +24,8 @@ def main():
     )
 
     cur = db_connect.cursor()
-    request = "SELECT * FROM states WHERE name='{}' ORDER BY id ASC".format(state_input)
+    request = "SELECT * FROM states WHERE name LIKE BINARY '{}'\
+ORDER BY id ASC".format(state_input)
 
     cur.execute(request)
     query_rows = cur.fetchall()
