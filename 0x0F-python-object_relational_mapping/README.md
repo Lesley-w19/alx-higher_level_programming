@@ -14,3 +14,4 @@
 10. Get a state
 11. Add a new state
 12. Update a state
+13. Delete states
