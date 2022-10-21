@@ -30,7 +30,7 @@ def main():
     session = Session()
 
     sql_query = session.query(State).filter(State.name.like("%a%"))
-    
+
     if sql_query.count() == 0:
         print("Not found")
     else:
