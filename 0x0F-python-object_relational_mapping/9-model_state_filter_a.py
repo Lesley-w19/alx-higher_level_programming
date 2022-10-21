@@ -13,12 +13,12 @@ from sqlalchemy.orm import sessionmaker
 
 
 def main():
-    username = argv[1]
+    user = argv[1]
     passwrd = argv[2]
     db_name = argv[3]
 
     engine = create_engine(
-        "mysql+mysqldb://{}:{}@localhost/{}".format(username, passwrd, db_name),
+        "mysql+mysqldb://{}:{}@localhost/{}".format(user, passwrd, db_name),
         pool_pre_ping=True
     )
 
@@ -28,12 +28,14 @@ def main():
 
     session = Session()
 
-    sql_query = session.query(State).filter(State.name.like('%a%')).order_by(State.id)
+    sql_query = session.query(State).filter(State.name.like('%a%')
+        ).order_by(State.id)
 
     for states in sql_query:
         print("{:d}: {}".format(states.id, states.name))
 
     session.close()
+
 
 if __name__ == '__main__':
     main()
