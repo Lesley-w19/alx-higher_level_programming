@@ -28,10 +28,10 @@ def main():
 
     session = Session()
 
-    sql_query = session.query(State).filter(State.name.like('%a%')
-    ).order_by(State.id)
+    sql_query = session.query(State).filter(State.name.like('%a%'))
+    order_query = sql_query.order_by(State.id)
 
-    for states in sql_query:
+    for states in order_query:
         print("{:d}: {}".format(states.id, states.name))
 
     session.close()
