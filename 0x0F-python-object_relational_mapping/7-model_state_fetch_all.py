@@ -13,12 +13,13 @@ from sqlalchemy.orm import sessionmaker
 
 
 def main():
-    username = argv[1]
+    user = argv[1]
     passwrd = argv[2]
     db_n = argv[3]
 
     engine = create_engine(
-        "mysql+mysqldb://{}:{}@localhost/{}".format(username, passwrd, db_n), pool_pre_ping=True)
+        "mysql+mysqldb://{}:{}@localhost/{}".format(user, passwrd, db_n),
+        pool_pre_ping=True)
 
     Base.metadata.create_all(engine)
 
