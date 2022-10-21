@@ -9,3 +9,4 @@
 5. All cities by state
 6. First state model
 7. All states via SQLAlchemy
+8. First state
