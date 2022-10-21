@@ -29,7 +29,7 @@ def main():
     session = Session()
 
     sql_query = session.query(State).filter(State.id == 2)
-    
+
     if sql_query.count() == 0:
         print("Not found")
     else:
