@@ -11,11 +11,12 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from model_state import State, Base
 
+
 def main():
     user = argv[1]
     passwrd = argv[2]
     db_name = argv[3]
-    
+
     engine = create_engine(
         "mysql+mysqldb://{}:{}@localhost/{}".format(user, passwrd, db_name),
         pool_pre_ping=True

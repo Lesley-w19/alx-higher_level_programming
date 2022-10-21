@@ -16,6 +16,7 @@ of an integer, can’t be null and is a foreign key to states.id
 from model_state import Base
 from sqlalchemy import Column, Integer, String, ForeignKey
 
+
 class City(Base):
     """ City Class """
     __tablename__ = 'cities'
