@@ -36,7 +36,8 @@ def main():
     else:
         for states in sql_query:
             session.delete(states)
-            session.commit()
+
+    session.commit()
 
     session.close()
 
