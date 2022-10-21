@@ -15,28 +15,27 @@ def main():
     username = argv[1]
     passwrd = argv[2]
     db_name = argv[3]
-    
+
     engine = create_engine(
         "mysql+mysqldb://{}:{}@localhost/{}".format(username, passwrd, db_name),
         pool_pre_ping=True
     )
-    
+
     Base.metadata.create_all(engine)
-    
+
     Session = sessionmaker(bind=engine)
-    
+
     session = Session()
-    
+
     sql_query = session.query(State).order_by(State.id)
-    
+
     states_length  = sql_query.count()
     first_state = sql_query.first()
-    
+
     if states_length == 0:
         print("Nothing\n")
     else:
         print("{}: {}".format(first_state.id, first_state.name))
-
 
     session.close()
 
