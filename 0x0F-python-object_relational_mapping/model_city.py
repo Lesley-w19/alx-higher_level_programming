@@ -21,7 +21,7 @@ class City(Base):
     __tablename__ = 'cities'
     id = Column(
         Integer,
-        auto_increment=True,
+        autoincrement=True,
         unique=True,
         nullable=False,
         primary_key=True
