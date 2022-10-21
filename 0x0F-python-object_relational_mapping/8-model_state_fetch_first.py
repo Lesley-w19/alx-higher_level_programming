@@ -33,7 +33,7 @@ def main():
     first_state = sql_query.first()
 
     if states_length == 0:
-        print("Nothing\n")
+        print("Nothing")
     else:
         print("{}: {}".format(first_state.id, first_state.name))
 
