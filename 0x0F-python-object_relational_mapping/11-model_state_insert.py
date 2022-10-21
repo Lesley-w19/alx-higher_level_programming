@@ -27,7 +27,7 @@ def main():
 
     session = Session()
 
-    state = State(name = "Louisiana")
+    state = State(name="Louisiana")
 
     session.add(state)
     session.commit()
