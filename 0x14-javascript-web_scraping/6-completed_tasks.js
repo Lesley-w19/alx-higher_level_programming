@@ -1,6 +1,6 @@
 #!/usr/bin/node
 const fs = require('fs');
-const request = require('/usr/lib/node_modules/request');
+const request = require('request');
 
 try {
   const url = process.argv[2];
