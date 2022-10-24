@@ -21,6 +21,9 @@ try {
         {
           encoding: 'utf8',
           flag: 'w'
+        },
+        err =>{
+            console.log(err)
         }
       );
     }
