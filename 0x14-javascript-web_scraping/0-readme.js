@@ -6,11 +6,11 @@ try {
   const data = fs.readFileSync(
     file,
     {
-      encoding : 'utf-8',
-      flag :'r'
+      encoding: 'utf-8',
+      flag: 'r'
     }
   );
   console.log(data);
 } catch (error) {
-    console.log(error);
+  console.log(error);
 }
