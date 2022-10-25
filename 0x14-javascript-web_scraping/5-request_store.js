@@ -15,7 +15,7 @@ try {
       if (error) {
         console.log(error);
       }
-      fs.writeFileSync(
+      fs.writeFile(
         file,
         body,
         {
