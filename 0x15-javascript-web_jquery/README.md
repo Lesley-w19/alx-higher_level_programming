@@ -5,3 +5,4 @@
 0. No JQuery
 1. With JQuery
 2. Click and turn red
+3. Add `.red` class
