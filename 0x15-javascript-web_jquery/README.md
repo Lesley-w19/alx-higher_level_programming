@@ -13,3 +13,4 @@
 8. Star Wars movies
 9. Say Hello!
 10. No jQuery - document loaded
+11. List, add, remove
