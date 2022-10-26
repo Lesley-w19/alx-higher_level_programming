@@ -12,3 +12,4 @@
 7. Star wars character
 8. Star Wars movies
 9. Say Hello!
+10. No jQuery - document loaded
