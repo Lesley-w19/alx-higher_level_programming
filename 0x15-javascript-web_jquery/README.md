@@ -11,3 +11,4 @@
 6. Change the text
 7. Star wars character
 8. Star Wars movies
+9. Say Hello!
