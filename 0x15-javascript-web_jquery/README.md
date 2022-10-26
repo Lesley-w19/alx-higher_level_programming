@@ -7,3 +7,4 @@
 2. Click and turn red
 3. Add `.red` class
 4. Toggle classes
+5. List of elements
