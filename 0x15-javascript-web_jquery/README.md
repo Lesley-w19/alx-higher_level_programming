@@ -9,3 +9,4 @@
 4. Toggle classes
 5. List of elements
 6. Change the text
+7. Star wars character
