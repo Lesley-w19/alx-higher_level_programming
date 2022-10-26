@@ -14,3 +14,4 @@
 9. Say Hello!
 10. No jQuery - document loaded
 11. List, add, remove
+12. Say hello to everybody!
