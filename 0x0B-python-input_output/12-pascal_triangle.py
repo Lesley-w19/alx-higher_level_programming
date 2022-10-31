@@ -9,35 +9,22 @@ Pascal’s triangle of n:
 def pascal_triangle(n):
     """_summary_
     Pascal’s triangle of n:
+    --- using recursive method
     Args:
         n (_type_): size of the pascal triangle
     """
-
     triangle = []
-
     if n <= 0:
         return triangle
 
-    for i in range(n):
-        row = []
-        for j in range(n):
-            if j > i:
-                break
-            if i > 0 and len(triangle) == i and len(triangle[i - 1]) == j:
-                y = triangle[i - 1][j]
-            elif len(triangle) >= i:
-                y = 0
-            if (
-                i > 0 and len(triangle) > i - 1 and 
-                j > 0 and len(triangle[i - 1]) > j - 1
-            ):
-                x = triangle[i - 1][j - 1]
-            else:
-                x = 0
-            if x == 0 and y == 0:
-                row.append(1)
-            else:
-                row.append(x + y)
-            triangle.append(row)
+    
+    triangle[0] = [1]
 
-        return triangle
+    for i in range(1, n - 1):
+        triangle[i][0] = 1
+        for j in range(1, i + 1):
+            if j < len(triangle[i - 1]):
+                triangle[i][j] = triangle[i - 1][j - 1] + triangle[i - 1][j]
+            else:
+                triangle[i][j] = triangle[i - 1][0]
+    return triangle
